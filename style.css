@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    margin-top: 60px;
+    margin-left: 30px;
+}
+
+.title, .movies {
+    padding-top: 120px;
+}
