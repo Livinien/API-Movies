@@ -66,7 +66,7 @@ console.log("movieApi");
       posterMovie.src = "https://www.themoviedb.org/t/p/w188_and_h282_bestv2" + movies[i].poster_path;
       moviesDiv.appendChild(posterMovie);
       
-      let title = document.createElement("h3");
+      let title = document.createElement("h5");
       title.setAttribute("class", "title_movie");
       title.textContent = movies[i].title;
       moviesDiv.appendChild(title);
