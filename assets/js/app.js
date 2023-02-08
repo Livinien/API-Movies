@@ -44,7 +44,7 @@ console.log("movieApi");
   // console.log(movies);
 
 
-  let movies = fetch(`https://api.themoviedb.org/3/movie/top_rated?api_key=8ce9f8f28953d4d7871c62b5ac654555`)
+  let movies = fetch(`https://api.themoviedb.org/3/movie/popular?api_key=8ce9f8f28953d4d7871c62b5ac654555&language=en-US&page=1`)
   .then(response => response.json())
   .then(data => {
     console.log(data);
@@ -62,12 +62,12 @@ console.log("movieApi");
       
       
       let posterMovie = document.createElement("img");
-      posterMovie.setAttribute("class", "posterMovie");
-      posterMovie.src = "https://www.themoviedb.org/movie" + movies[i].poster_path;
+      posterMovie.setAttribute("class", "poster_movie");
+      posterMovie.src = "https://www.themoviedb.org/t/p/w188_and_h282_bestv2" + movies[i].poster_path;
       moviesDiv.appendChild(posterMovie);
       
-      let title = document.createElement("h1");
-      title.setAttribute("class", "title");
+      let title = document.createElement("h3");
+      title.setAttribute("class", "title_movie");
       title.textContent = movies[i].title;
       moviesDiv.appendChild(title);
     }

@@ -4,16 +4,55 @@
     box-sizing: border-box;
 }
 
+/* HEADER */
+
 .navbar {
     display: flex;
     justify-content: center;
 }
 
+
+/* BODY */
+
 .title {
-    margin-top: 60px;
+    margin-top: 200px;
     margin-left: 30px;
+    padding-bottom: 50px;
 }
 
-.title, .movies {
-    padding-top: 120px;
+/* MOVIES LIST */
+
+.movies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.movie {
+    padding: 40px 30px;
+}
+
+.poster_movie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: -2px 0px 15px 5px rgba(0,0,0,0.47);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.poster_movie:hover {
+    transform: scale(1.1);
+}
+
+.title_movie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0px;
+    cursor: pointer;
 }
